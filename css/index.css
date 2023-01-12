@@ -1,0 +1,299 @@
+@import "./fonts/fonts.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* header */
+
+.header {
+	width: 100%;
+	background-color: #374f4c;
+	padding: 15px 0px;
+}
+
+.header-item {
+	max-width: 900px;
+	margin: auto;
+}
+
+.navigation {
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px;
+}
+
+.navigation-wrapper {
+	margin: auto;
+	max-width: 1120px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation-list {
+	justify-content: space-between;
+	display: flex;
+	width: 600px;
+}
+
+.navigation-wrapper-item {
+	width: 100px;
+}
+
+.navigation-item-text {
+	font-size: 39px;
+	line-height: 54px;
+	letter-spacing: 1.6px;
+	font-weight: 400;
+	color: rgba(62, 62, 66, 1);
+}
+
+.navigation-list-item {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 16px;
+	letter-spacing: 0.32px;
+	color: rgba(62, 62, 66, 1);
+	cursor: pointer;
+}
+
+.navigation-list-item:hover {
+	border-bottom: 1px solid green;
+	transition: 1s;
+}
+
+/* main */
+.container {
+	max-width: 1120px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.main-wrapper-item-left {
+	margin: 30px 0 0px;
+	max-width: 363px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-title,
+.secondary-title,
+.for-dowland-title {
+	width: 100%;
+	opacity: 0;
+	animation-duration: 2.5s;
+	animation-name: appearance;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 0.5s;
+}
+
+@keyframes appearance {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.main-title-text {
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: rgba(55, 79, 76, 1);
+}
+
+.secondary-title {
+	width: 100%;
+	animation-delay: 2s;
+}
+
+.secondary-title-text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 0.32px;
+	color: rgb(31, 31, 32);
+}
+
+.for-dowland-title {
+	width: 100%;
+	animation-delay: 3s;
+}
+
+.for-dowland-title-text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 0.32px;
+	color: rgba(62, 62, 66, 1);
+}
+
+.store-group {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	animation-duration: 3.5s;
+	animation-name: transoform-button;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 4s;
+	animation-timing-function: linear;
+}
+
+@keyframes transoform-button {
+	from {
+		transform: translateX(-200%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+.logo-group {
+	gap: 3px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.logo-group-item {
+	cursor: pointer;
+}
+
+.logo-1,
+.logo-2,
+.logo-3,
+.logo-4,
+.logo-5,
+.logo-6,
+.logo-7 {
+	opacity: 0;
+	animation-duration: 5s;
+	animation-name: display-logo;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 8s;
+}
+
+@keyframes display-logo {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.logo-1 {
+	animation-delay: 8s;
+}
+
+.logo-2 {
+	animation-delay: 9s;
+}
+.logo-3 {
+	animation-delay: 10s;
+}
+.logo-4 {
+	animation-delay: 11s;
+}
+.logo-5 {
+	animation-delay: 12s;
+}
+.logo-6 {
+	animation-delay: 13s;
+}
+.logo-7 {
+	animation-delay: 14s;
+}
+
+.main-wrapper-item-right {
+	max-width: 700px;
+}
+
+.image-group {
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	animation-duration: 3.5s;
+	animation-name: transoform-image-group;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 16s;
+	animation-timing-function: linear;
+}
+
+@keyframes transoform-image-group {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.img-1 {
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+
+.background-img-2 {
+	z-index: 2;
+	display: block;
+	position: absolute;
+	top: 24%;
+	right: 50%;
+}
+
+.main-img-2 {
+	z-index: 3;
+	top: 40%;
+	right: 65%;
+	position: absolute;
+}
+
+.phone-img {
+	position: relative;
+	z-index: 10;
+}
+
+.store-group-item {
+	cursor: pointer;
+}
+
+.image-text {
+	width: 143px;
+	z-index: 3;
+	display: block;
+	position: absolute;
+	right: 70%;
+	top: 70%;
+	color: rgba(55, 79, 76, 1);
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	text-align: center;
+}
